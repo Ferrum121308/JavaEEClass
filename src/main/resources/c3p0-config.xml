@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c3p0-config>
+    <default-config>
+        <!--初始化连接数-->
+        <property name="initialPoolSize">10</property>
+        <!--设置连接超时时间-->
+        <property name="maxIdleTime">30</property>
+        <!--设置最大连接数-->
+        <property name="maxPoolSize">100</property>
+        <!--设置最小连接数-->
+        <property name="minPoolSize">10</property>
+        <!--设置最大事物数量-->
+        <property name="maxStatements">200</property>
+    </default-config>
+    <named-config name="mysql">
+        <!--加载驱动-->
+        <property name="driveClass">com.mysql.cj.jdbc.Driver</property>
+        <!--数据库连接地址-->
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/javaee?serverTimezone=GMT%2b8&amp;useUnicode=true&amp;characterEncoding=utf8</property>
+        <!--设置用户-->
+        <property name="user">root</property>
+        <!--设置密码-->
+        <property name="password">121308</property>
+        <!--初始化连接数-->
+        <property name="initialPoolSize">10</property>
+        <!--设置连接超时时间-->
+        <property name="maxIdleTime">30</property>
+        <!--设置最大连接数-->
+        <property name="maxPoolSize">100</property>
+        <!--设置最小连接数-->
+        <property name="minPoolSize">10</property>
+        <!--设置最大事物数量-->
+        <property name="maxStatements">200</property>
+    </named-config>
+</c3p0-config>
